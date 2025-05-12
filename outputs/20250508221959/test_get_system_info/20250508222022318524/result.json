@@ -1,0 +1,125 @@
+{
+    "case_name": "test_get_system_info",
+    "run_time": "20250508 22:20:22",
+    "test_type": "SeatReservationAutoTest",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1746714024.7303004,
+    "is_failure": false,
+    "is_error": false,
+    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+    "package": "seat_reservation_auto_test",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "batteryLevel": 31,
+            "benchmarkLevel": -1,
+            "brand": "devtools",
+            "memorySize": 2048,
+            "model": "iPhone 12/13 (Pro)",
+            "system": "iOS 10.0.1",
+            "platform": "devtools",
+            "pixelRatio": 3,
+            "safeArea": {
+                "top": 47,
+                "left": 0,
+                "right": 390,
+                "bottom": 810,
+                "width": 390,
+                "height": 763
+            },
+            "screenWidth": 390,
+            "screenHeight": 844,
+            "screenTop": 91,
+            "windowWidth": 390,
+            "windowHeight": 753,
+            "statusBarHeight": 47,
+            "version": "8.0.5",
+            "language": "zh_CN",
+            "SDKVersion": "2.20.1",
+            "enableDebug": false,
+            "fontSizeScaleFactor": 1,
+            "fontSizeSetting": 16,
+            "mode": "default",
+            "host": {
+                "env": "WeChat"
+            },
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "locationReducedAccuracy": true,
+            "albumAuthorized": true,
+            "bluetoothAuthorized": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "notificationAlertAuthorized": true,
+            "notificationBadgeAuthorized": true,
+            "notificationSoundAuthorized": true,
+            "phoneCalendarAuthorized": true,
+            "deviceOrientation": "portrait",
+            "devicePixelRatio": 3
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "",
+    "error_value": "",
+    "error_extra_info": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/login/login",
+            "path": "images\\setup.png",
+            "ts": 1746714024,
+            "datetime": "2025-05-08 22:20:24",
+            "use_region": false
+        },
+        {
+            "name": "assertIn-success",
+            "url": "/pages/login/login",
+            "path": "images\\assertIn-success.png",
+            "ts": 1746714025,
+            "datetime": "2025-05-08 22:20:25",
+            "use_region": false
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/login/login",
+            "path": "images\\teardown.png",
+            "ts": 1746714026,
+            "datetime": "2025-05-08 22:20:26",
+            "use_region": false
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertIn",
+            "ret": true,
+            "msg": null,
+            "img": "assertIn-success",
+            "wxml": ""
+        }
+    ],
+    "autofix_info": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1746714026.7094684,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_get_system_info(self):\n",
+            "        sys_info = self.mini.get_system_info()\n",
+            "        self.assertIn(\"SDKVersion\", sys_info)\n"
+        ],
+        "start": 12
+    },
+    "filename": "result.json"
+}

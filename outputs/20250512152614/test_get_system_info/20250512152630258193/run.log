@@ -1,0 +1,18 @@
+[I 2025-05-12 15:26:30,289 minium minitest#432 _miniSetUp] =========Current case: test_get_system_info=========
+[I 2025-05-12 15:26:30,289 minium minitest#435 _miniSetUp] package info: C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test, case info: SeatReservationAutoTest.test_get_system_info
+[I 2025-05-12 15:26:30,289 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2025-05-12 15:26:30,289 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2025-05-12 15:26:30,289 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2025-05-12 15:26:30,289 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2025-05-12 15:26:30,289 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2025-05-12 15:26:30,289 minium.Conn4608 connection#427 _safely_send] SEND > [1813224914608]{"id":"4ddff81b-cd07-4414-871c-c2b54c9cdaef","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2025-05-12 15:26:30,289 minium.Conn4608 connection#660 __on_message] RECV < [1813224914608]{"id":"4ddff81b-cd07-4414-871c-c2b54c9cdaef","result":{"result":{"path":"pages/login/login","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[I 2025-05-12 15:26:30,289 minium.App2800 app#950 relaunch] ReLaunch: /pages/login/login
+[D 2025-05-12 15:26:30,299 minium.Conn4608 connection#427 _safely_send] ASYNC_SEND > [1813224914608]{"id":"37c6b70d-57e3-484b-9c66-7f6ac6f89861","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/login/login"}]}}
+[D 2025-05-12 15:26:30,299 minium.Conn4608 connection#660 __on_message] RECV < [1813224914608]{"method":"App.bindingCalled","params":{"name":"reLaunch_before_global","args":[{"url":"/pages/login/login"}]}}
+[D 2025-05-12 15:26:31,602 minium.Conn4608 connection#660 __on_message] RECV < [1813224914608]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":2,"path":"pages/login/login","query":{},"openType":"reLaunch"},1747034791601]}}
+[I 2025-05-12 15:26:31,604 minium.App2800 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 2, 'path': 'pages/login/login', 'query': {}, 'openType': 'reLaunch'}, 1747034791601]}
+[D 2025-05-12 15:26:31,607 minium.Conn4608 connection#660 __on_message] RECV < [1813224914608]{"id":"37c6b70d-57e3-484b-9c66-7f6ac6f89861","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2025-05-12 15:26:31,607 minium.Conn4608 connection#704 _handle_async_msg] received async msg: 37c6b70d-57e3-484b-9c66-7f6ac6f89861
+[I 2025-05-12 15:26:31,609 minium minitest#897 capture] capture setup.png
+[D 2025-05-12 15:26:31,609 minium.Conn4608 connection#427 _safely_send] SEND > [1813224914608]{"id":"972e2dd8-f4bb-4b26-b4b2-9598dfc2879a","method":"App.captureScreenshot","params":{}}

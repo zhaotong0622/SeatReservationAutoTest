@@ -1,0 +1,36 @@
+[I 2025-05-08 22:22:13,682 minium minitest#432 _miniSetUp] =========Current case: test_get_system_info=========
+[I 2025-05-08 22:22:13,682 minium minitest#435 _miniSetUp] package info: C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test, case info: SeatReservationAutoTest.test_get_system_info
+[I 2025-05-08 22:22:13,682 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2025-05-08 22:22:13,682 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2025-05-08 22:22:13,682 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2025-05-08 22:22:13,682 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2025-05-08 22:22:13,682 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2025-05-08 22:22:13,682 minium.Conn7552 connection#427 _safely_send] SEND > [1296209107552]{"id":"142e101c-5534-40fb-86cb-0f17cc325215","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2025-05-08 22:22:13,692 minium.Conn7552 connection#660 __on_message] RECV < [1296209107552]{"id":"142e101c-5534-40fb-86cb-0f17cc325215","result":{"result":{"path":"pages/login/login","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[I 2025-05-08 22:22:13,693 minium.App1488 app#950 relaunch] ReLaunch: /pages/login/login
+[D 2025-05-08 22:22:13,695 minium.Conn7552 connection#427 _safely_send] ASYNC_SEND > [1296209107552]{"id":"9d673c82-34cd-4c8c-b137-eba6faa9c226","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/login/login"}]}}
+[D 2025-05-08 22:22:13,696 minium.Conn7552 connection#660 __on_message] RECV < [1296209107552]{"method":"App.bindingCalled","params":{"name":"reLaunch_before_global","args":[{"url":"/pages/login/login"}]}}
+[D 2025-05-08 22:22:15,010 minium.Conn7552 connection#660 __on_message] RECV < [1296209107552]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":2,"path":"pages/login/login","query":{},"openType":"reLaunch"},1746714135001]}}
+[D 2025-05-08 22:22:15,010 minium.Conn7552 connection#660 __on_message] RECV < [1296209107552]{"id":"9d673c82-34cd-4c8c-b137-eba6faa9c226","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2025-05-08 22:22:15,014 minium.App1488 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 2, 'path': 'pages/login/login', 'query': {}, 'openType': 'reLaunch'}, 1746714135001]}
+[I 2025-05-08 22:22:15,015 minium.Conn7552 connection#704 _handle_async_msg] received async msg: 9d673c82-34cd-4c8c-b137-eba6faa9c226
+[I 2025-05-08 22:22:15,015 minium minitest#897 capture] capture setup.png
+[D 2025-05-08 22:22:15,015 minium.Conn7552 connection#427 _safely_send] SEND > [1296209107552]{"id":"d3d24775-692e-4efa-9321-b57b5038b446","method":"App.captureScreenshot","params":{}}
+[W 2025-05-08 22:23:15,019 minium.App1488 app#682 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[W 2025-05-08 22:23:15,019 minium minitest#929 capture] C:\PythonProject\SeatReservationAutoTest\outputs\20250508222153\test_get_system_info\20250508222213676575\images\setup.png not exists
+[I 2025-05-08 22:23:15,019 minium minitest#487 _miniSetUp] =========case: test_get_system_info start=========
+[I 2025-05-08 22:23:15,019 minium minitest#788 _callTestMethod] call test method
+[D 2025-05-08 22:23:15,019 minium.Conn7552 connection#427 _safely_send] SEND > [1296209107552]{"id":"3b519fd7-414a-4194-a4c1-0708bf4e937c","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+[D 2025-05-08 22:23:15,037 minium.Conn7552 connection#660 __on_message] RECV < [1296209107552]{"id":"3b519fd7-414a-4194-a4c1-0708bf4e937c","result":{"result":{"batteryLevel":30,"benchmarkLevel":-1,"brand":"devtools","memorySize":2048,"model":"iPhone 12/13 (Pro)","system":"iOS 10.0.1","platform":"devtools","pixelRatio":3,"safeArea":{"top":47,"left":0,"right":390,"bottom":810,"width":390,"height":763},"screenWidth":390,"screenHeight":844,"screenTop":91,"windowWidth":390,"windowHeight":753,"statusBarHeight":47,"version":"8.0.5","language":"zh_CN","SDKVersion":"2.20.1","enableDebug":false,"fontSizeScale
+[I 2025-05-08 22:23:15,120 minium minitest#897 capture] capture assertIn-success.png
+[D 2025-05-08 22:23:15,120 minium.Conn7552 connection#427 _safely_send] SEND > [1296209107552]{"id":"21578972-4190-4339-92a3-fb6e8bbe5d07","method":"App.captureScreenshot","params":{}}
+[W 2025-05-08 22:23:17,126 minium.App1488 app#682 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[W 2025-05-08 22:23:17,126 minium minitest#929 capture] C:\PythonProject\SeatReservationAutoTest\outputs\20250508222153\test_get_system_info\20250508222213676575\images\assertIn-success.png not exists
+[I 2025-05-08 22:23:17,126 minium minitest#796 _callTestMethod] end test method
+[D 2025-05-08 22:23:17,126 minium minitest#799 _miniTearDown] =========Current case Down: test_get_system_info=========
+[I 2025-05-08 22:23:17,126 minium minitest#897 capture] capture teardown.png
+[D 2025-05-08 22:23:17,126 minium.Conn7552 connection#427 _safely_send] SEND > [1296209107552]{"id":"ac8e455c-558a-4947-8fd9-646cd0754cca","method":"App.captureScreenshot","params":{}}
+[W 2025-05-08 22:23:19,136 minium.App1488 app#682 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[W 2025-05-08 22:23:19,136 minium minitest#929 capture] C:\PythonProject\SeatReservationAutoTest\outputs\20250508222153\test_get_system_info\20250508222213676575\images\teardown.png not exists
+[I 2025-05-08 22:23:19,136 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2025-05-08 22:23:19,140 minium basenative#63 wrapper] call BaseNative.get_start_up end 

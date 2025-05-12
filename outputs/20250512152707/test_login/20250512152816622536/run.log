@@ -1,0 +1,144 @@
+[I 2025-05-12 15:28:16,622 minium minitest#432 _miniSetUp] =========Current case: test_login=========
+[I 2025-05-12 15:28:16,622 minium minitest#435 _miniSetUp] package info: C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test, case info: SeatReservationAutoTest.test_login
+[I 2025-05-12 15:28:16,622 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2025-05-12 15:28:16,622 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2025-05-12 15:28:16,638 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2025-05-12 15:28:16,638 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2025-05-12 15:28:16,638 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[I 2025-05-12 15:28:16,638 minium.App8624 app#950 relaunch] ReLaunch: /pages/login/login
+[D 2025-05-12 15:28:16,638 minium.Conn3456 connection#427 _safely_send] ASYNC_SEND > [2106088123456]{"id":"4a657423-7b88-4ddd-9c43-06e16f48e114","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/login/login"}]}}
+[D 2025-05-12 15:28:16,638 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"method":"App.bindingCalled","params":{"name":"reLaunch_before_global","args":[{"url":"/pages/login/login"}]}}
+[D 2025-05-12 15:28:17,639 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"pages/login/login","query":{},"openType":"reLaunch"},1747034897624]}}
+[D 2025-05-12 15:28:17,639 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"4a657423-7b88-4ddd-9c43-06e16f48e114","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2025-05-12 15:28:17,642 minium.App8624 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'pages/login/login', 'query': {}, 'openType': 'reLaunch'}, 1747034897624]}
+[I 2025-05-12 15:28:17,643 minium.Conn3456 connection#704 _handle_async_msg] received async msg: 4a657423-7b88-4ddd-9c43-06e16f48e114
+[I 2025-05-12 15:28:17,643 minium minitest#897 capture] capture setup.png
+[D 2025-05-12 15:28:17,648 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"e89d74b4-feaf-4a8e-9fdb-eea0af02aec6","method":"App.captureScreenshot","params":{}}
+[W 2025-05-12 15:28:19,662 minium.App8624 app#682 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[W 2025-05-12 15:28:19,662 minium minitest#929 capture] C:\PythonProject\SeatReservationAutoTest\outputs\20250512152707\test_login\20250512152816622536\images\setup.png not exists
+[I 2025-05-12 15:28:19,662 minium minitest#487 _miniSetUp] =========case: test_login start=========
+[I 2025-05-12 15:28:19,662 minium minitest#788 _callTestMethod] call test method
+[I 2025-05-12 15:28:19,662 minium page#716 _get_elements_by_css] try to get elements: input[class='input'][placeholder='请输入账号']
+[D 2025-05-12 15:28:19,662 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"09642575-ef39-4bc3-9b93-acd784e789c1","method":"Page.getElements","params":{"selector":"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u8d26\u53f7']","pageId":6}}
+[D 2025-05-12 15:28:19,678 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"09642575-ef39-4bc3-9b93-acd784e789c1","result":{"elements":[{"elementId":"36606452-5fdb-40d5-ae4c-ee7a098dbed2","tagName":"input"}]}}
+[I 2025-05-12 15:28:19,679 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000001EA5CB0AB50>]
+[D 2025-05-12 15:28:19,679 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"7b76b82c-c0b1-4866-a828-634c45665393","method":"Element.callFunction","params":{"functionName":"input.input","args":["tester",false],"elementId":"36606452-5fdb-40d5-ae4c-ee7a098dbed2","pageId":6}}
+[D 2025-05-12 15:28:19,691 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"7b76b82c-c0b1-4866-a828-634c45665393","result":{}}
+[D 2025-05-12 15:28:19,692 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"6f412478-8a31-42a3-b59f-4f446bea3ac5","method":"Element.triggerEvent","params":{"type":"blur","detail":{"value":"tester","cursor":6},"elementId":"36606452-5fdb-40d5-ae4c-ee7a098dbed2","pageId":6}}
+[D 2025-05-12 15:28:19,696 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"6f412478-8a31-42a3-b59f-4f446bea3ac5","result":{}}
+[I 2025-05-12 15:28:22,700 minium page#716 _get_elements_by_css] try to get elements: input[class='input'][placeholder='请输入密码']
+[D 2025-05-12 15:28:22,700 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"0899f1e0-6e51-40fc-9595-a609cf7047aa","method":"Page.getElements","params":{"selector":"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u5bc6\u7801']","pageId":6}}
+[D 2025-05-12 15:28:22,718 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"0899f1e0-6e51-40fc-9595-a609cf7047aa","result":{"elements":[{"elementId":"9434e778-b41c-4385-9a93-c6368949743b","tagName":"input"}]}}
+[I 2025-05-12 15:28:22,719 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000001EA5CB0A280>]
+[D 2025-05-12 15:28:22,720 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"041658e4-308f-4d2f-a7f5-d0471745e250","method":"Element.callFunction","params":{"functionName":"input.input","args":["123",false],"elementId":"9434e778-b41c-4385-9a93-c6368949743b","pageId":6}}
+[D 2025-05-12 15:28:22,726 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"041658e4-308f-4d2f-a7f5-d0471745e250","result":{}}
+[D 2025-05-12 15:28:22,727 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"0232bdbe-d073-4595-ae74-08eaa9c8c6dd","method":"Element.triggerEvent","params":{"type":"blur","detail":{"value":"123","cursor":3},"elementId":"9434e778-b41c-4385-9a93-c6368949743b","pageId":6}}
+[D 2025-05-12 15:28:22,731 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"0232bdbe-d073-4595-ae74-08eaa9c8c6dd","result":{}}
+[I 2025-05-12 15:28:25,734 minium page#716 _get_elements_by_css] try to get elements: button[class='login-btn']
+[D 2025-05-12 15:28:25,734 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"53b3c308-f885-452c-bb1c-4daebede25d2","method":"Page.getElements","params":{"selector":"button[class='login-btn']","pageId":6}}
+[D 2025-05-12 15:28:25,739 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"53b3c308-f885-452c-bb1c-4daebede25d2","result":{"elements":[{"elementId":"71a6993d-b703-43d1-9199-ca091c9ac620","tagName":"button"}]}}
+[I 2025-05-12 15:28:25,740 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001EA5CAF0D90>]
+[D 2025-05-12 15:28:25,741 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"215388f5-de16-4fb7-9f97-baa3eded1a2a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"71a6993d-b703-43d1-9199-ca091c9ac620","pageId":6}}
+[D 2025-05-12 15:28:25,744 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"215388f5-de16-4fb7-9f97-baa3eded1a2a","result":{"properties":["立即登陆"]}}
+[D 2025-05-12 15:28:25,745 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"a7060190-ed91-4306-a0f2-decd9ca3fd66","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"71a6993d-b703-43d1-9199-ca091c9ac620","pageId":6}}
+[D 2025-05-12 15:28:25,749 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"a7060190-ed91-4306-a0f2-decd9ca3fd66","result":{"styles":["auto"]}}
+[D 2025-05-12 15:28:25,750 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"6278accc-e2f2-4631-a980-8f1e3e16e599","method":"Element.tap","params":{"elementId":"71a6993d-b703-43d1-9199-ca091c9ac620","pageId":6}}
+[D 2025-05-12 15:28:26,981 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"6278accc-e2f2-4631-a980-8f1e3e16e599","result":{}}
+[D 2025-05-12 15:28:27,531 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"method":"App.bindingCalled","params":{"name":"showToast_before_1747034789694","args":[{"title":"网络错误，请稍后再试","icon":"none","duration":2000},0.7746434850124186]}}
+[W 2025-05-12 15:28:27,532 minium.Conn3456 connection#330 notify] no observer listening event showToast_before_1747034789694
+[D 2025-05-12 15:28:27,537 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"method":"App.bindingCalled","params":{"name":"showToast_before_1747034830321","args":[{"title":"网络错误，请稍后再试","icon":"none","duration":2000},0.7746434850124186]}}
+[D 2025-05-12 15:28:27,539 minium.App8624 app#1344 super_before] showToast before hook result: [{'title': '网络错误，请稍后再试', 'icon': 'none', 'duration': 2000}, 0.7746434850124186]
+[D 2025-05-12 15:28:27,548 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"method":"App.bindingCalled","params":{"name":"showToast_callback_1747034789694","args":[{"errMsg":"showToast:ok"},0.7746434850124186]}}
+[W 2025-05-12 15:28:27,549 minium.Conn3456 connection#330 notify] no observer listening event showToast_callback_1747034789694
+[D 2025-05-12 15:28:27,550 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"method":"App.bindingCalled","params":{"name":"showToast_callback_1747034830321","args":[{"errMsg":"showToast:ok"},0.7746434850124186]}}
+[D 2025-05-12 15:28:27,551 minium.App8624 app#1366 super_callback] wx.showToast callback hook result: [{'errMsg': 'showToast:ok'}, 0.7746434850124186]
+[I 2025-05-12 15:28:27,995 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:27,995 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"2790d89e-f2f8-4748-a5d4-ea8f36cdafc7","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:28,006 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"2790d89e-f2f8-4748-a5d4-ea8f36cdafc7","result":{"elements":[]}}
+[W 2025-05-12 15:28:28,008 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:29,022 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:29,022 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"a6372542-750c-4862-b102-39bfaec7a525","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:29,035 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"a6372542-750c-4862-b102-39bfaec7a525","result":{"elements":[]}}
+[W 2025-05-12 15:28:29,035 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:30,042 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:30,042 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"517ac3e3-9a06-45f2-89a1-43080d9bb277","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:30,053 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"517ac3e3-9a06-45f2-89a1-43080d9bb277","result":{"elements":[]}}
+[W 2025-05-12 15:28:30,054 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:31,061 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:31,061 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"25e2b7a2-a690-44eb-bcb8-89f875943f05","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:31,071 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"25e2b7a2-a690-44eb-bcb8-89f875943f05","result":{"elements":[]}}
+[W 2025-05-12 15:28:31,072 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:32,078 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:32,078 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"256f6c0a-6697-4d56-97f7-d59036260455","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:32,078 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"256f6c0a-6697-4d56-97f7-d59036260455","result":{"elements":[]}}
+[W 2025-05-12 15:28:32,087 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:33,100 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:33,100 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"9fdd191f-e112-4145-bbf4-3b344753cfee","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:33,110 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"9fdd191f-e112-4145-bbf4-3b344753cfee","result":{"elements":[]}}
+[W 2025-05-12 15:28:33,111 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:34,125 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:34,125 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"3cc4b7b5-bc96-4803-a695-c74fb010dc44","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:34,131 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"3cc4b7b5-bc96-4803-a695-c74fb010dc44","result":{"elements":[]}}
+[W 2025-05-12 15:28:34,132 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:35,139 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:35,139 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"e0e11349-892f-4ba3-812f-08a8f06f752b","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:35,151 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"e0e11349-892f-4ba3-812f-08a8f06f752b","result":{"elements":[]}}
+[W 2025-05-12 15:28:35,152 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:36,164 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:36,164 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"fde3523a-2edf-4f5f-b740-393b467118fb","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:36,174 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"fde3523a-2edf-4f5f-b740-393b467118fb","result":{"elements":[]}}
+[W 2025-05-12 15:28:36,174 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[I 2025-05-12 15:28:37,184 minium page#716 _get_elements_by_css] try to get elements: view[class='submit-btn']
+[D 2025-05-12 15:28:37,184 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"84e80a1f-9def-407f-8f67-7df2c58b8cec","method":"Page.getElements","params":{"selector":"view[class='submit-btn']","pageId":6}}
+[D 2025-05-12 15:28:37,189 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"84e80a1f-9def-407f-8f67-7df2c58b8cec","result":{"elements":[]}}
+[W 2025-05-12 15:28:37,190 minium page#747 _get_elements_by_css] Could not found any element 'view[class='submit-btn']' you need
+[E 2025-05-12 15:28:37,194 minium assertbase#62 hook_assert] False is not true
+[I 2025-05-12 15:28:37,194 minium minitest#897 capture] capture assertTrue-failed.png
+[D 2025-05-12 15:28:37,195 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"e4eb5921-91d7-4fac-a11a-7b8a325b6ca2","method":"App.captureScreenshot","params":{}}
+[W 2025-05-12 15:28:39,207 minium.App8624 app#682 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[W 2025-05-12 15:28:39,207 minium minitest#929 capture] C:\PythonProject\SeatReservationAutoTest\outputs\20250512152707\test_login\20250512152816622536\images\assertTrue-failed.png not exists
+[I 2025-05-12 15:28:39,207 minium page#716 _get_elements_by_css] try to get elements: page
+[D 2025-05-12 15:28:39,207 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"d2ecefb5-c8bb-471e-8d09-b2b902196d4c","method":"Page.getElements","params":{"selector":"page","pageId":6}}
+[D 2025-05-12 15:28:39,222 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"d2ecefb5-c8bb-471e-8d09-b2b902196d4c","result":{"elements":[{"elementId":"f7c1453c-fc7b-4617-887b-eb34170bb0d9","tagName":"body","nodeId":"08c6662c"}]}}
+[I 2025-05-12 15:28:39,223 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000001EA5CAF0130>]
+[D 2025-05-12 15:28:39,224 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"3daedd56-7a8d-447a-8225-0668644d3329","method":"Element.getWXML","params":{"type":"inner","elementId":"f7c1453c-fc7b-4617-887b-eb34170bb0d9","pageId":6,"nodeId":"08c6662c"}}
+[D 2025-05-12 15:28:39,234 minium.Conn3456 connection#660 __on_message] RECV < [2106088123456]{"id":"3daedd56-7a8d-447a-8225-0668644d3329","result":{"wxml":"<view class=\"container\"><image class=\"full-bg\" mode=\"aspectFill\" src=\"../../images/login-bg.jpg\" role=\"img\"></image><view class=\"bottom-mask\"></view><view class=\"nav-bar\"><text class=\"system-title\">座位预约系统</text></view><view class=\"welcome-container\"><text class=\"welcome-text\">欢迎进入</text><text class=\"system-name\">座位预约系统</text><view class=\"line\"></view></view><view class=\"login-area\"><view class=\"avatar-container\"><imag
+[D 2025-05-12 15:28:39,241 minium page#244 pretty_wxml] pretty wxml error
+[E 2025-05-12 15:28:39,241 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\python38\lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+  File "C:\PythonProject\SeatReservationAutoTest\seat_reservation_auto_test.py", line 40, in test_login
+    self.assertTrue(page.element_is_exists("view[class='submit-btn']", text_contains="提交申请"))
+  File "C:\anaconda3\envs\python38\lib\site-packages\minium\framework\assertbase.py", line 60, in hook_assert
+    return src(self, *args, **kwargs)
+  File "C:\anaconda3\envs\python38\lib\unittest\case.py", line 765, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+[I 2025-05-12 15:28:39,241 minium minitest#796 _callTestMethod] end test method
+[D 2025-05-12 15:28:39,256 minium minitest#799 _miniTearDown] =========Current case Down: test_login=========
+[I 2025-05-12 15:28:39,256 minium minitest#897 capture] capture teardown.png
+[D 2025-05-12 15:28:39,256 minium.Conn3456 connection#427 _safely_send] SEND > [2106088123456]{"id":"a5b2c0ea-7a2c-48c0-9b13-c0056ce6d06e","method":"App.captureScreenshot","params":{}}
+[W 2025-05-12 15:28:41,258 minium.App8624 app#682 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[W 2025-05-12 15:28:41,258 minium minitest#929 capture] C:\PythonProject\SeatReservationAutoTest\outputs\20250512152707\test_login\20250512152816622536\images\teardown.png not exists
+[I 2025-05-12 15:28:41,258 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2025-05-12 15:28:41,258 minium basenative#63 wrapper] call BaseNative.get_start_up end 
+[E 2025-05-12 15:28:41,271 minium assertbase#390 _get_stack_info] <bound method SeatReservationAutoTest.test_login of <seat_reservation_auto_test.SeatReservationAutoTest testMethod=test_login>>
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 266, in testPartExecutor
+    yield
+  File "C:\anaconda3\envs\python38\lib\site-packages\minium\framework\libs\unittest\case.py", line 351, in run
+    self._callTestMethod(testMethod)
+  File "C:\anaconda3\envs\python38\lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+  File "C:\PythonProject\SeatReservationAutoTest\seat_reservation_auto_test.py", line 40, in test_login
+    self.assertTrue(page.element_is_exists("view[class='submit-btn']", text_contains="提交申请"))
+  File "C:\anaconda3\envs\python38\lib\site-packages\minium\framework\assertbase.py", line 60, in hook_assert
+    return src(self, *args, **kwargs)
+  File "C:\anaconda3\envs\python38\lib\unittest\case.py", line 765, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+[W 2025-05-12 15:28:41,271 minium assertbase#354 _log_info_when_error] config: {'debug': False, 'base_dir': 'C:\\PythonProject\\SeatReservationAutoTest', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': False, 'outputs': 'C:\\PythonProject\\SeatReservationAutoTest\\outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': 'C:\\zhaotong\\SeatReservation', 'dev_tool_path': 'C:\\Program Files (x86)\\Tencent\\微信web开发者工具\\cli.bat', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20250512152707', 'case_output': 'C:\\PythonProject\\SeatReservationAutoTest\\outputs\\20250512152707\\test_login\\20250512152816622536'}
+[W 2025-05-12 15:28:41,271 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[W 2025-05-12 15:28:41,271 minium minitest#1029 _log_info_when_error] mini: 基础库2.20.1, 开发者工具1.06.2412050
+[W 2025-05-12 15:28:41,271 minium minitest#1031 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x000001EA5CA26B20>

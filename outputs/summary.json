@@ -1,0 +1,20 @@
+{
+    "test_num": 2,
+    "errors": [],
+    "failures": [
+        {
+            "module": "SeatReservationAutoTest",
+            "error_type": "test_case",
+            "case_name": "test_login",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 40, in test_login\n    self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\assertbase.py\", line 60, in hook_assert\n    return src(self, *args, **kwargs)\nAssertionError: False is not true\n"
+        },
+        {
+            "module": "SeatReservationAutoTest",
+            "error_type": "test_case",
+            "case_name": "test_login",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 40, in test_login\n    self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\assertbase.py\", line 60, in hook_assert\n    return src(self, *args, **kwargs)\nAssertionError: False is not true\n"
+        }
+    ],
+    "class_errors": [],
+    "class_failures": []
+}

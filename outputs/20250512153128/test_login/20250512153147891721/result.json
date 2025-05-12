@@ -1,0 +1,145 @@
+{
+    "case_name": "test_login",
+    "run_time": "20250512 15:31:47",
+    "test_type": "SeatReservationAutoTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 40, in test_login\n    self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\assertbase.py\", line 60, in hook_assert\n    return src(self, *args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\unittest\\case.py\", line 765, in assertTrue\n    raise self.failureException(msg)\nAssertionError: False is not true\n",
+    "errors": "",
+    "start_timestamp": 1747035109.7970505,
+    "is_failure": true,
+    "is_error": false,
+    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+    "package": "seat_reservation_auto_test",
+    "failed_line_num": 40,
+    "device": {
+        "system_info": {
+            "batteryLevel": 100,
+            "benchmarkLevel": -1,
+            "brand": "devtools",
+            "memorySize": 2048,
+            "model": "iPhone 12/13 (Pro)",
+            "system": "iOS 10.0.1",
+            "platform": "devtools",
+            "pixelRatio": 3,
+            "safeArea": {
+                "top": 47,
+                "left": 0,
+                "right": 390,
+                "bottom": 810,
+                "width": 390,
+                "height": 763
+            },
+            "screenWidth": 390,
+            "screenHeight": 844,
+            "screenTop": 91,
+            "windowWidth": 390,
+            "windowHeight": 753,
+            "statusBarHeight": 47,
+            "version": "8.0.5",
+            "language": "zh_CN",
+            "SDKVersion": "2.20.1",
+            "enableDebug": false,
+            "fontSizeScaleFactor": 1,
+            "fontSizeSetting": 16,
+            "mode": "default",
+            "host": {
+                "env": "WeChat"
+            },
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "locationReducedAccuracy": true,
+            "albumAuthorized": true,
+            "bluetoothAuthorized": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "notificationAlertAuthorized": true,
+            "notificationBadgeAuthorized": true,
+            "notificationSoundAuthorized": true,
+            "phoneCalendarAuthorized": true,
+            "deviceOrientation": "portrait",
+            "devicePixelRatio": 3
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "AssertionError",
+    "error_value": "False is not true",
+    "error_extra_info": "",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/login/login",
+            "path": "images\\setup.png",
+            "ts": 1747035109,
+            "datetime": "2025-05-12 15:31:49",
+            "use_region": false
+        },
+        {
+            "name": "assertTrue-failed",
+            "url": "/pages/login/login",
+            "path": "images\\assertTrue-failed.png",
+            "ts": 1747035127,
+            "datetime": "2025-05-12 15:32:07",
+            "use_region": false
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/login/login",
+            "path": "images\\teardown.png",
+            "ts": 1747035128,
+            "datetime": "2025-05-12 15:32:08",
+            "use_region": false
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertTrue",
+            "ret": false,
+            "msg": "False is not true",
+            "img": "assertTrue-failed",
+            "wxml": "12153207.wxml"
+        }
+    ],
+    "autofix_info": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1747035128.0671647,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_login(self):\n",
+            "        page = self.page\n",
+            "\n",
+            "        # \u8f93\u5165\u8d26\u53f7\n",
+            "        el = page.get_element(\"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u8d26\u53f7']\")\n",
+            "        el.input(\"tester\")\n",
+            "        time.sleep(3)\n",
+            "\n",
+            "        # \u8f93\u5165\u5bc6\u7801\n",
+            "        el = page.get_element(\"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u5bc6\u7801']\")\n",
+            "        el.input(\"123\")\n",
+            "        time.sleep(3)\n",
+            "\n",
+            "        # \u70b9\u51fb\"\u7acb\u5373\u767b\u5f55\"\n",
+            "        el = page.get_element(\"button[class='login-btn']\", text_contains=\"\u7acb\u5373\u767b\u9646\")\n",
+            "        el.click()\n",
+            "\n",
+            "        # \u67e5\u770b\u662f\u5426\u767b\u5f55\u6210\u529f\n",
+            "        page = self.page\n",
+            "        self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n",
+            "        # self.assertTrue()\n"
+        ],
+        "start": 21
+    },
+    "filename": "result.json"
+}

@@ -1,0 +1,1730 @@
+{
+    "version": 2,
+    "task_datas": [
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_get_system_info",
+                    "run_time": "20250512 15:31:43",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1747035105.9707794,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 100,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1747035105,
+                            "datetime": "2025-05-12 15:31:45",
+                            "use_region": false
+                        },
+                        {
+                            "name": "assertIn-success",
+                            "url": "/pages/login/login",
+                            "path": "images\\assertIn-success.png",
+                            "ts": 1747035106,
+                            "datetime": "2025-05-12 15:31:46",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1747035107,
+                            "datetime": "2025-05-12 15:31:47",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertIn",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertIn-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1747035107.8837261,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_get_system_info(self):\n",
+                            "        sys_info = self.mini.get_system_info()\n",
+                            "        self.assertIn(\"SDKVersion\", sys_info)\n"
+                        ],
+                        "start": 16
+                    },
+                    "filename": "result.json",
+                    "relative": "20250512153128\\test_get_system_info\\20250512153143865373",
+                    "costs": "1.913\u79d2"
+                },
+                {
+                    "case_name": "test_login",
+                    "run_time": "20250512 15:31:47",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 40, in test_login\n    self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\assertbase.py\", line 60, in hook_assert\n    return src(self, *args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\unittest\\case.py\", line 765, in assertTrue\n    raise self.failureException(msg)\nAssertionError: False is not true\n",
+                    "errors": "",
+                    "start_timestamp": 1747035109.7970505,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": 40,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 100,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "False is not true",
+                    "error_extra_info": "",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1747035109,
+                            "datetime": "2025-05-12 15:31:49",
+                            "use_region": false
+                        },
+                        {
+                            "name": "assertTrue-failed",
+                            "url": "/pages/login/login",
+                            "path": "images\\assertTrue-failed.png",
+                            "ts": 1747035127,
+                            "datetime": "2025-05-12 15:32:07",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1747035128,
+                            "datetime": "2025-05-12 15:32:08",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": false,
+                            "msg": "False is not true",
+                            "img": "assertTrue-failed",
+                            "wxml": "12153207.wxml"
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1747035128.0671647,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_login(self):\n",
+                            "        page = self.page\n",
+                            "\n",
+                            "        # \u8f93\u5165\u8d26\u53f7\n",
+                            "        el = page.get_element(\"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u8d26\u53f7']\")\n",
+                            "        el.input(\"tester\")\n",
+                            "        time.sleep(3)\n",
+                            "\n",
+                            "        # \u8f93\u5165\u5bc6\u7801\n",
+                            "        el = page.get_element(\"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u5bc6\u7801']\")\n",
+                            "        el.input(\"123\")\n",
+                            "        time.sleep(3)\n",
+                            "\n",
+                            "        # \u70b9\u51fb\"\u7acb\u5373\u767b\u5f55\"\n",
+                            "        el = page.get_element(\"button[class='login-btn']\", text_contains=\"\u7acb\u5373\u767b\u9646\")\n",
+                            "        el.click()\n",
+                            "\n",
+                            "        # \u67e5\u770b\u662f\u5426\u767b\u5f55\u6210\u529f\n",
+                            "        page = self.page\n",
+                            "        self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n",
+                            "        # self.assertTrue()\n"
+                        ],
+                        "start": 21
+                    },
+                    "filename": "result.json",
+                    "relative": "20250512153128\\test_login\\20250512153147891721",
+                    "costs": "18.270\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 2,
+                "success": 1,
+                "failed": 1,
+                "error": 0,
+                "costs": "22.096\u79d2",
+                "start_time": "2025/05/12 15:31:45",
+                "end_time": "2025/05/12 15:32:08",
+                "detail": [
+                    {
+                        "name": "seat_reservation_auto_test",
+                        "case_num": 2,
+                        "success": 1,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2025/05/12 15:31:45",
+                        "end_time": "2025/05/12 15:32:08",
+                        "costs": "22.096\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_get_system_info",
+                    "run_time": "20250512 15:27:11",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1747034892.3373363,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 100,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertIn",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertIn-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1747034896.6069074,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_get_system_info(self):\n",
+                            "        sys_info = self.mini.get_system_info()\n",
+                            "        self.assertIn(\"SDKVersion\", sys_info)\n"
+                        ],
+                        "start": 16
+                    },
+                    "filename": "result.json",
+                    "relative": "20250512152707\\test_get_system_info\\20250512152711358448",
+                    "costs": "4.270\u79d2"
+                },
+                {
+                    "case_name": "test_login",
+                    "run_time": "20250512 15:28:16",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": false,
+                    "failures": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 40, in test_login\n    self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\assertbase.py\", line 60, in hook_assert\n    return src(self, *args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\unittest\\case.py\", line 765, in assertTrue\n    raise self.failureException(msg)\nAssertionError: False is not true\n",
+                    "errors": "",
+                    "start_timestamp": 1747034899.6621876,
+                    "is_failure": true,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": 40,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 100,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "AssertionError",
+                    "error_value": "False is not true",
+                    "error_extra_info": "",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertTrue",
+                            "ret": false,
+                            "msg": "False is not true",
+                            "img": "assertTrue-failed",
+                            "wxml": "12152839.wxml"
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1747034921.2711341,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_login(self):\n",
+                            "        page = self.page\n",
+                            "\n",
+                            "        # \u8f93\u5165\u8d26\u53f7\n",
+                            "        el = page.get_element(\"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u8d26\u53f7']\")\n",
+                            "        el.input(\"tester\")\n",
+                            "        time.sleep(3)\n",
+                            "\n",
+                            "        # \u8f93\u5165\u5bc6\u7801\n",
+                            "        el = page.get_element(\"input[class='input'][placeholder='\u8bf7\u8f93\u5165\u5bc6\u7801']\")\n",
+                            "        el.input(\"123\")\n",
+                            "        time.sleep(3)\n",
+                            "\n",
+                            "        # \u70b9\u51fb\"\u7acb\u5373\u767b\u5f55\"\n",
+                            "        el = page.get_element(\"button[class='login-btn']\", text_contains=\"\u7acb\u5373\u767b\u9646\")\n",
+                            "        el.click()\n",
+                            "\n",
+                            "        # \u67e5\u770b\u662f\u5426\u767b\u5f55\u6210\u529f\n",
+                            "        page = self.page\n",
+                            "        self.assertTrue(page.element_is_exists(\"view[class='submit-btn']\", text_contains=\"\u63d0\u4ea4\u7533\u8bf7\"))\n",
+                            "        # self.assertTrue()\n"
+                        ],
+                        "start": 21
+                    },
+                    "filename": "result.json",
+                    "relative": "20250512152707\\test_login\\20250512152816622536",
+                    "costs": "21.609\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 2,
+                "success": 1,
+                "failed": 1,
+                "error": 0,
+                "costs": "28.934\u79d2",
+                "start_time": "2025/05/12 15:28:12",
+                "end_time": "2025/05/12 15:28:41",
+                "detail": [
+                    {
+                        "name": "seat_reservation_auto_test",
+                        "case_num": 2,
+                        "success": 1,
+                        "failed": 1,
+                        "error": 0,
+                        "start_time": "2025/05/12 15:28:12",
+                        "end_time": "2025/05/12 15:28:41",
+                        "costs": "28.934\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [],
+            "summary": {
+                "case_num": 0,
+                "success": 0,
+                "failed": 0,
+                "error": 0,
+                "costs": "0.000\u79d2",
+                "start_time": "2025/05/12 15:26:30",
+                "end_time": "2025/05/12 15:26:31",
+                "detail": []
+            },
+            "unfinished_case_datas": {
+                "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test": {
+                    "SeatReservationAutoTest": {
+                        "test_get_system_info": {
+                            "log_filename": "run.log",
+                            "test_type": "SeatReservationAutoTest",
+                            "relative": "20250512152614\\test_get_system_info\\20250512152630258193",
+                            "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                            "run_time": "20250512 15:26:30",
+                            "start_timestamp": 1747034790.0,
+                            "stop_timestamp": 1747034791.6094317
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_get_system_info",
+                    "run_time": "20250508 22:22:13",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1746714195.019776,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 30,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertIn",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertIn-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746714199.1418366,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_get_system_info(self):\n",
+                            "        sys_info = self.mini.get_system_info()\n",
+                            "        self.assertIn(\"SDKVersion\", sys_info)\n"
+                        ],
+                        "start": 12
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508222153\\test_get_system_info\\20250508222213676575",
+                    "costs": "4.122\u79d2"
+                },
+                {
+                    "case_name": "test_login",
+                    "run_time": "20250508 22:23:19",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1746714202.6735299,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 30,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746714205.7694335,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_login(self):\n",
+                            "        # \u6d4b\u8bd5\u7528\u4f8b\u5fc5\u987b\u4ee5test_\u5f00\u5934\n",
+                            "        # time.sleep(10)\n",
+                            "        self.page.get_element(\"button[class='login-btn']\", text_contains=\"\u7acb\u5373\u767b\u9646\").click()\n"
+                        ],
+                        "start": 16
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508222153\\test_login\\20250508222319141836",
+                    "costs": "3.096\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 2,
+                "success": 2,
+                "failed": 0,
+                "error": 0,
+                "costs": "10.750\u79d2",
+                "start_time": "2025/05/08 22:23:15",
+                "end_time": "2025/05/08 22:23:25",
+                "detail": [
+                    {
+                        "name": "seat_reservation_auto_test",
+                        "case_num": 2,
+                        "success": 2,
+                        "failed": 0,
+                        "error": 0,
+                        "start_time": "2025/05/08 22:23:15",
+                        "end_time": "2025/05/08 22:23:25",
+                        "costs": "10.750\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_get_system_info",
+                    "run_time": "20250508 22:20:22",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1746714024.7303004,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 31,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1746714024,
+                            "datetime": "2025-05-08 22:20:24",
+                            "use_region": false
+                        },
+                        {
+                            "name": "assertIn-success",
+                            "url": "/pages/login/login",
+                            "path": "images\\assertIn-success.png",
+                            "ts": 1746714025,
+                            "datetime": "2025-05-08 22:20:25",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1746714026,
+                            "datetime": "2025-05-08 22:20:26",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertIn",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertIn-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746714026.7094684,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_get_system_info(self):\n",
+                            "        sys_info = self.mini.get_system_info()\n",
+                            "        self.assertIn(\"SDKVersion\", sys_info)\n"
+                        ],
+                        "start": 12
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508221959\\test_get_system_info\\20250508222022318524",
+                    "costs": "1.979\u79d2"
+                },
+                {
+                    "case_name": "test_login",
+                    "run_time": "20250508 22:20:26",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1746714028.8151696,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 31,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1746714028,
+                            "datetime": "2025-05-08 22:20:28",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1746714040,
+                            "datetime": "2025-05-08 22:20:40",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746714040.9444962,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_login(self):\n",
+                            "        # \u6d4b\u8bd5\u7528\u4f8b\u5fc5\u987b\u4ee5test_\u5f00\u5934\n",
+                            "        time.sleep(10)\n",
+                            "        self.page.get_element(\"button[class='login-btn']\", text_contains=\"\u7acb\u5373\u767b\u9646\").click()\n"
+                        ],
+                        "start": 16
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508221959\\test_login\\20250508222026725092",
+                    "costs": "12.129\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 2,
+                "success": 2,
+                "failed": 0,
+                "error": 0,
+                "costs": "16.214\u79d2",
+                "start_time": "2025/05/08 22:20:24",
+                "end_time": "2025/05/08 22:20:40",
+                "detail": [
+                    {
+                        "name": "seat_reservation_auto_test",
+                        "case_num": 2,
+                        "success": 2,
+                        "failed": 0,
+                        "error": 0,
+                        "start_time": "2025/05/08 22:20:24",
+                        "end_time": "2025/05/08 22:20:40",
+                        "costs": "16.214\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_get_system_info",
+                    "run_time": "20250508 22:09:52",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1746713394.5649853,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 35,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1746713394,
+                            "datetime": "2025-05-08 22:09:54",
+                            "use_region": false
+                        },
+                        {
+                            "name": "assertIn-success",
+                            "url": "/pages/login/login",
+                            "path": "images\\assertIn-success.png",
+                            "ts": 1746713395,
+                            "datetime": "2025-05-08 22:09:55",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1746713396,
+                            "datetime": "2025-05-08 22:09:56",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertIn",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertIn-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746713396.9646592,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_get_system_info(self):\n",
+                            "        sys_info = self.mini.get_system_info()\n",
+                            "        self.assertIn(\"SDKVersion\", sys_info)\n"
+                        ],
+                        "start": 12
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508220929\\test_get_system_info\\20250508220952041509",
+                    "costs": "2.400\u79d2"
+                },
+                {
+                    "case_name": "test_login",
+                    "run_time": "20250508 22:09:56",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": false,
+                    "failures": "",
+                    "errors": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 19, in test_login\n    self.page.get_element(\"button\", inner_text=\"\u7acb\u5373\u767b\u5f55\").click()\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\app.py\", line 291, in wrapper\n    return func(*args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 148, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\page\\page.py\", line 375, in get_element\n    raise MiniElementNotFoundError(_selector)\nminium.framework.exception.MiniElementNotFoundError: element[button] not found\n",
+                    "start_timestamp": 1746713399.137511,
+                    "is_failure": false,
+                    "is_error": true,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": 19,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 35,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "MiniElementNotFoundError",
+                    "error_value": "element[button] not found",
+                    "error_extra_info": "",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1746713399,
+                            "datetime": "2025-05-08 22:09:59",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1746713410,
+                            "datetime": "2025-05-08 22:10:10",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [],
+                    "autofix_info": [],
+                    "page_wxml": "08221010.wxml",
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746713410.2737482,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_login(self):\n",
+                            "        # \u6d4b\u8bd5\u7528\u4f8b\u5fc5\u987b\u4ee5test_\u5f00\u5934\n",
+                            "        time.sleep(10)\n",
+                            "        self.page.get_element(\"button\", inner_text=\"\u7acb\u5373\u767b\u5f55\").click()\n"
+                        ],
+                        "start": 16
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508220929\\test_login\\20250508220956964659",
+                    "costs": "11.136\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 2,
+                "success": 1,
+                "failed": 0,
+                "error": 1,
+                "costs": "15.709\u79d2",
+                "start_time": "2025/05/08 22:09:54",
+                "end_time": "2025/05/08 22:10:10",
+                "detail": [
+                    {
+                        "name": "seat_reservation_auto_test",
+                        "case_num": 2,
+                        "success": 1,
+                        "failed": 0,
+                        "error": 1,
+                        "start_time": "2025/05/08 22:09:54",
+                        "end_time": "2025/05/08 22:10:10",
+                        "costs": "15.709\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_get_system_info",
+                    "run_time": "20250508 22:07:04",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": true,
+                    "failures": "",
+                    "errors": "",
+                    "start_timestamp": 1746713277.06089,
+                    "is_failure": false,
+                    "is_error": false,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": -1,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 37,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "",
+                    "error_value": "",
+                    "error_extra_info": "",
+                    "error_stages": [],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1746713277,
+                            "datetime": "2025-05-08 22:07:57",
+                            "use_region": false
+                        },
+                        {
+                            "name": "assertIn-success",
+                            "url": "/pages/login/login",
+                            "path": "images\\assertIn-success.png",
+                            "ts": 1746713279,
+                            "datetime": "2025-05-08 22:07:59",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1746713282,
+                            "datetime": "2025-05-08 22:08:02",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [
+                        {
+                            "name": "assertIn",
+                            "ret": true,
+                            "msg": null,
+                            "img": "assertIn-success",
+                            "wxml": ""
+                        }
+                    ],
+                    "autofix_info": [],
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746713282.1575773,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_get_system_info(self):\n",
+                            "        sys_info = self.mini.get_system_info()\n",
+                            "        self.assertIn(\"SDKVersion\", sys_info)\n"
+                        ],
+                        "start": 10
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508220648\\test_get_system_info\\20250508220704757800",
+                    "costs": "5.097\u79d2"
+                },
+                {
+                    "case_name": "test_login",
+                    "run_time": "20250508 22:08:02",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": false,
+                    "failures": "",
+                    "errors": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 16, in test_login\n    self.page.get_element(\"button\", inner_text=\"\u7acb\u5373\u767b\u5f55\").click()\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\app.py\", line 291, in wrapper\n    return func(*args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 148, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\page\\page.py\", line 375, in get_element\n    raise MiniElementNotFoundError(_selector)\nminium.framework.exception.MiniElementNotFoundError: element[button] not found\n",
+                    "start_timestamp": 1746713298.5403304,
+                    "is_failure": false,
+                    "is_error": true,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": 16,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 37,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "MiniElementNotFoundError",
+                    "error_value": "element[button] not found",
+                    "error_extra_info": "",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [
+                        {
+                            "name": "setup",
+                            "url": "/pages/login/login",
+                            "path": "images\\setup.png",
+                            "ts": 1746713298,
+                            "datetime": "2025-05-08 22:08:18",
+                            "use_region": false
+                        },
+                        {
+                            "name": "teardown",
+                            "url": "/pages/login/login",
+                            "path": "images\\teardown.png",
+                            "ts": 1746713299,
+                            "datetime": "2025-05-08 22:08:19",
+                            "use_region": false
+                        }
+                    ],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [],
+                    "autofix_info": [],
+                    "page_wxml": "08220819.wxml",
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746713299.7253387,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_login(self):\n",
+                            "        # \u6d4b\u8bd5\u7528\u4f8b\u5fc5\u987b\u4ee5test_\u5f00\u5934\n",
+                            "        self.page.get_element(\"button\", inner_text=\"\u7acb\u5373\u767b\u5f55\").click()\n"
+                        ],
+                        "start": 14
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508220648\\test_login\\20250508220802157577",
+                    "costs": "1.185\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 2,
+                "success": 1,
+                "failed": 0,
+                "error": 1,
+                "costs": "22.664\u79d2",
+                "start_time": "2025/05/08 22:07:57",
+                "end_time": "2025/05/08 22:08:19",
+                "detail": [
+                    {
+                        "name": "seat_reservation_auto_test",
+                        "case_num": 2,
+                        "success": 1,
+                        "failed": 0,
+                        "error": 1,
+                        "start_time": "2025/05/08 22:07:57",
+                        "end_time": "2025/05/08 22:08:19",
+                        "costs": "22.664\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        },
+        {
+            "case_datas": [
+                {
+                    "case_name": "test_login",
+                    "run_time": "20250508 22:01:22",
+                    "test_type": "SeatReservationAutoTest",
+                    "case_doc": null,
+                    "success": false,
+                    "failures": "",
+                    "errors": "Traceback (most recent call last):\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 266, in testPartExecutor\n    yield\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 351, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\framework\\minitest.py\", line 789, in _callTestMethod\n    method()\n  File \"C:\\PythonProject\\SeatReservationAutoTest\\seat_reservation_auto_test.py\", line 12, in test_login\n    self.page.get_element(\"button\", inner_text=\"\u7acb\u5373\u767b\u5f55\").click()\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\app.py\", line 291, in wrapper\n    return func(*args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 148, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\anaconda3\\envs\\python38\\lib\\site-packages\\minium\\miniprogram\\base_driver\\page\\page.py\", line 375, in get_element\n    raise MiniElementNotFoundError(_selector)\nminium.framework.exception.MiniElementNotFoundError: element[button] not found\n",
+                    "start_timestamp": 1746712944.3299692,
+                    "is_failure": false,
+                    "is_error": true,
+                    "module": "C:.PythonProject.SeatReservationAutoTest.seat_reservation_auto_test",
+                    "package": "seat_reservation_auto_test",
+                    "failed_line_num": 12,
+                    "device": {
+                        "system_info": {
+                            "batteryLevel": 39,
+                            "benchmarkLevel": -1,
+                            "brand": "devtools",
+                            "memorySize": 2048,
+                            "model": "iPhone 12/13 (Pro)",
+                            "system": "iOS 10.0.1",
+                            "platform": "devtools",
+                            "pixelRatio": 3,
+                            "safeArea": {
+                                "top": 47,
+                                "left": 0,
+                                "right": 390,
+                                "bottom": 810,
+                                "width": 390,
+                                "height": 763
+                            },
+                            "screenWidth": 390,
+                            "screenHeight": 844,
+                            "screenTop": 91,
+                            "windowWidth": 390,
+                            "windowHeight": 753,
+                            "statusBarHeight": 47,
+                            "version": "8.0.5",
+                            "language": "zh_CN",
+                            "SDKVersion": "2.20.1",
+                            "enableDebug": false,
+                            "fontSizeScaleFactor": 1,
+                            "fontSizeSetting": 16,
+                            "mode": "default",
+                            "host": {
+                                "env": "WeChat"
+                            },
+                            "bluetoothEnabled": true,
+                            "locationEnabled": true,
+                            "wifiEnabled": true,
+                            "locationReducedAccuracy": true,
+                            "albumAuthorized": true,
+                            "bluetoothAuthorized": true,
+                            "cameraAuthorized": true,
+                            "locationAuthorized": true,
+                            "microphoneAuthorized": true,
+                            "notificationAuthorized": true,
+                            "notificationAlertAuthorized": true,
+                            "notificationBadgeAuthorized": true,
+                            "notificationSoundAuthorized": true,
+                            "phoneCalendarAuthorized": true,
+                            "deviceOrientation": "portrait",
+                            "devicePixelRatio": 3
+                        }
+                    },
+                    "log_filename": "run.log",
+                    "error_type": "MiniElementNotFoundError",
+                    "error_value": "element[button] not found",
+                    "error_extra_info": "",
+                    "error_stages": [
+                        "testMethod"
+                    ],
+                    "screen_info": [],
+                    "step_info": [],
+                    "check_list": [],
+                    "assert_list": [],
+                    "autofix_info": [],
+                    "page_wxml": "08220226.wxml",
+                    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+                    "weapp_log_path": "weapp.log",
+                    "request_log_path": "request.log",
+                    "stop_timestamp": 1746712946.495416,
+                    "appId": "",
+                    "appName": "",
+                    "source": {
+                        "code": [
+                            "    def test_login(self):\n",
+                            "        # \u6d4b\u8bd5\u7528\u4f8b\u5fc5\u987b\u4ee5test_\u5f00\u5934\n",
+                            "        self.page.get_element(\"button\", inner_text=\"\u7acb\u5373\u767b\u5f55\").click()\n"
+                        ],
+                        "start": 10
+                    },
+                    "filename": "result.json",
+                    "relative": "20250508220105\\test_login\\20250508220122782424",
+                    "costs": "2.165\u79d2"
+                }
+            ],
+            "summary": {
+                "case_num": 1,
+                "success": 0,
+                "failed": 0,
+                "error": 1,
+                "costs": "2.165\u79d2",
+                "start_time": "2025/05/08 22:02:24",
+                "end_time": "2025/05/08 22:02:26",
+                "detail": [
+                    {
+                        "name": "seat_reservation_auto_test",
+                        "case_num": 1,
+                        "success": 0,
+                        "failed": 0,
+                        "error": 1,
+                        "start_time": "2025/05/08 22:02:24",
+                        "end_time": "2025/05/08 22:02:26",
+                        "costs": "2.165\u79d2"
+                    }
+                ]
+            },
+            "unfinished_case_datas": {}
+        }
+    ],
+    "summary": {}
+}
